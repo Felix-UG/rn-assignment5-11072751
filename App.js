@@ -2,23 +2,21 @@ import { StatusBar } from 'expo-status-bar';
 import react ,{useState} from 'react';
 import { SafeAreaView, StyleSheet, Text, View, Image , Appearance} from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 import HomeScreen from './tabs/HomeScreen';
 import CardsScreen from './tabs/CardsScreen';
 import StatisticsScreen from './tabs/StatisticsScreen';
 import SettingsScreen from './tabs/SettingsScreen';
-import { NavigationContainer } from '@react-navigation/native';
+
 
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
 
-  const[theme, setTheme] = useState(Appearance.getColorScheme());
-  Appearance.addChangeListener((scheme) => {
-    console.log(scheme)
-  }) 
+
 
   return (
   <NavigationContainer>
@@ -38,7 +36,7 @@ export default function App() {
       component={CardsScreen}
       options={{
       headerShown: false, 
-        tabBarIcon: ({ color, size}) => (
+        tabBarIcon: () => (
           <Image source={require('./assets/myCards.png') }/>
         ),
       }}
@@ -48,7 +46,7 @@ export default function App() {
       component={StatisticsScreen}
       options={{
       headerShown: false, 
-        tabBarIcon: ({ color, size}) => (
+        tabBarIcon: () => (
           <Image source={require('./assets/statistics.png') }/>
         ),
       }}
@@ -58,13 +56,13 @@ export default function App() {
       component={SettingsScreen}
       options={{
       headerShown: false, 
-        tabBarIcon: ({ color, size}) => (
+        tabBarIcon: () => (
           <Image source={require('./assets/settings.png') }/>
         ),
       }}
     />  
   </Tab.Navigator>
-  </NavigationContainer>  
+  </NavigationContainer>   
   );
 }
 

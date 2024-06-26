@@ -17,7 +17,6 @@ export default SettingsContentData
 const styles = StyleSheet.create({
   container:{
     marginTop: hp('2%'),
-    // backgroundColor: '#f0f0ff',
     flexDirection: 'row',
     justifyContent: 'space-between',
     height: hp('9%'),

@@ -81,7 +81,6 @@ const styles = StyleSheet.create({
     container:{
         height: hp('100%'),
         width: wp('100%'),
-        // backgroundColor: 'lightblue',
         paddingTop: hp('5%'),
         paddingBottom: hp('5%'),
         paddingLeft: wp('5%'),
@@ -91,7 +90,6 @@ const styles = StyleSheet.create({
     header:{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        // backgroundColor: 'lightgreen',
         alignItems: 'center'
     },
 
@@ -106,7 +104,6 @@ const styles = StyleSheet.create({
     message:{
         marginLeft: wp('5%'),
         width: wp('50%'),
-        // backgroundColor: 'yellow'
     },
 
     message1:{
@@ -133,7 +130,6 @@ const styles = StyleSheet.create({
     midContent: {
         width: wp('90%'),
         marginTop: hp('5%'),
-        // backgroundColor: 'lightgreen'
     },
 
     buttonRow: {

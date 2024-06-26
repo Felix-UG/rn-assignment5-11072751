@@ -25,7 +25,6 @@ export default Transaction
 
 const styles = StyleSheet.create({
     container: {
-        // backgroundColor: 'green',
         marginTop: hp('2%'),
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -51,11 +50,10 @@ const styles = StyleSheet.create({
         marginLeft: wp('3%'),
         alignSelf: 'center',
         width: wp('50%'),
-        // backgroundColor: '#0000ff'
     }, 
 
     price: {
-        // backgroundColor: '#ff0000'
+
     }
 
 })

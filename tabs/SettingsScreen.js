@@ -1,8 +1,7 @@
 import { StyleSheet, Text, View, FlatList, Switch } from 'react-native'
-import React from 'react'
+import React, { useContext } from 'react'
 import { heightPercentageToDP as hp , widthPercentageToDP as wp } from 'react-native-responsive-screen'
 import SettingsContentData from '../components/SettingsContentData'
-
 
 export default function SettingsScreen() {
 
@@ -42,7 +41,6 @@ export default function SettingsScreen() {
 const styles = StyleSheet.create({
     container:{height: hp('100%'),
         width: wp('100%'),
-        // backgroundColor: 'lightblue',
         paddingTop: hp('5%'),
         paddingBottom: hp('5%'),
         paddingLeft: wp('5%'),
@@ -50,7 +48,6 @@ const styles = StyleSheet.create({
     },
 
     header:{
-        // backgroundColor: '#0000ff',
         marginTop: hp('3%'),
         justifyContent: 'center',
         alignItems: 'center',
@@ -61,7 +58,6 @@ const styles = StyleSheet.create({
     }, 
 
     theme:{
-        // backgroundColor: 'lightblue',
         marginTop: hp('5%'),
         flexDirection: 'row',
         justifyContent: 'space-between',
