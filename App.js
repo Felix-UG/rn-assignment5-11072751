@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View, Image } from 'react-native';
+import react ,{useState} from 'react';
+import { SafeAreaView, StyleSheet, Text, View, Image , Appearance} from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
@@ -13,6 +14,12 @@ import { NavigationContainer } from '@react-navigation/native';
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+
+  const[theme, setTheme] = useState(Appearance.getColorScheme());
+  Appearance.addChangeListener((scheme) => {
+    console.log(scheme)
+  }) 
+
   return (
   <NavigationContainer>
   <Tab.Navigator>
