@@ -26,7 +26,7 @@ export default function App() {
       component={HomeScreen}
       options={{
       headerShown: false, 
-        tabBarIcon: ({ color, size}) => (
+        tabBarIcon: () => (
           <Image source={require('./assets/home.png') }/>
         ),
       }}
